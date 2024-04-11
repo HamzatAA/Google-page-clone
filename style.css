@@ -1,66 +1,145 @@
+/* Resetting default styles for all elements to ensure consistency across browsers */
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+    font-family: Arial, Helvetica, sans-serif; /* Sets the default font family */
 }
 
-/* .page{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100vh;
-} */
+/* Styling for the main page container */
+.page{
+    display: flex; /* Uses Flexbox layout */
+    flex-direction: column; /* Stacks child elements vertically */
+    justify-content: space-between; /* Distributes space evenly between child elements */
+    height: 100vh; /* Sets the height to 100% of the viewport height */
+}
 
+/* Styling for anchor tags to remove default text decoration and set color */
 a{
-    text-decoration: none;
-    color: black;
+    text-decoration: none; /* Removes underline from links */
+    color: black; /* Sets link color to black */
 }
 
+/* Styling for images within the right navigation to make them circular and set a specific width */
 .right_nav img{
-    width: 32px;
-    border-radius: 50%;
-    /* border: 2px linear navy; */
+    width: 32px; /* Sets the width of the images */
+    border-radius: 50%; /* Makes the images circular */
+    /* border: 2px solid navy; */ /* Uncomment to add a border around the images */
 }
 
+/* Styling for the navigation bar */
 nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
+    display: flex; /* Uses Flexbox layout */
+    justify-content: space-between; /* Distributes space evenly between child elements */
+    align-items: center; /* Aligns child elements vertically in the center */
+    padding: 15px; /* Adds padding around the navigation bar */
 }
 
+/* Styling for the left navigation section */
 .left_nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 10%;
+    display: flex; /* Uses Flexbox layout */
+    align-items: center; /* Aligns child elements vertically in the center */
+    justify-content: space-between; /* Distributes space evenly between child elements */
+    width: 10%; /* Sets the width of the left navigation section */
 }
 
+/* Styling for the right navigation section */
 .right_nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 20%;
+    display: flex; /* Uses Flexbox layout */
+    align-items: center; /* Aligns child elements vertically in the center */
+    justify-content: space-between; /* Distributes space evenly between child elements */
+    width: 20%; /* Sets the width of the right navigation section */
 }
 
+/* Styling for the main content area */
+.main{
+    display: flex; /* Uses Flexbox layout */
+    flex-direction: column; /* Stacks child elements vertically */
+}
+
+/* Styling for the logo section */
+.logo{
+    width: 20%; /* Sets the width of the logo section */
+    display: flex; /* Uses Flexbox layout */
+    align-self: center; /* Centers the logo section horizontally */
+}
+
+/* Styling for the search box */
 .search_box{
-    display: flex;
-    background-color: none;
-    border: lightgray 1px solid;
-    width: 60%;
-    padding: 10px;
-    border-radius: 16px;
-    justify-content: space-between;
-    align-items: center;
+    display: flex; /* Uses Flexbox layout */
+    background-color: none; /* Sets the background color to transparent */
+    border: lightgray 1px solid; /* Adds a light gray border */
+    width: 60%; /* Sets the width of the search box */
+    padding: 10px 15px; /* Adds padding inside the search box */
+    border-radius: 32px; /* Rounds the corners of the search box */
+    justify-content: space-between; /* Distributes space evenly between child elements */
+    align-items: center; /* Aligns child elements vertically in the center */
+    align-self: center; /* Centers the search box horizontally */
+    margin-top: 30px; /* Adds margin at the top of the search box */
 }
 
+/* Styling for images within the search box */
 .search_box img{
-    width: 32px;
+    width: 32px; /* Sets the width of the images */
 }
 
+/* Styling for input fields within the search box */
+.search_box input{
+    width: 80%; /* Sets the width of the input field */
+    border: none; /* Removes the default border */
+    height: 20px; /* Sets the height of the input field */
+}
+
+/* Styling for the input field when it is focused */
+.search_box input:focus{
+    outline: none; /* Removes the default outline */
+    font-size: larger; /* Increases the font size */
+}
+
+/* Styling for icons within the search box */
+.search_box i{
+    opacity: 40%; /* Sets the opacity of the icons */
+}
+
+/* Styling for the button box */
+.btn_box{
+    align-self: center; /* Centers the button box horizontally */
+}
+
+/* Styling for buttons within the button box */
 .btn_box button{
-    padding: 10px;
-    font-size: 1.1em;
-    margin: 20px;
+    padding: 10px 15px; /* Adds padding inside the buttons */
+    font-size: 1.1em; /* Sets the font size */
+    margin: 20px; /* Adds margin around the buttons */
+    background-color: #F8F8F8; /* Sets the background color */
+    border: none; /* Removes the default border */
+    font-size: 15px; /* Sets the font size */
+}
+
+/* Styling for the footer */
+footer{
+    background-color: #F2F2F2; /* Sets the background color */
+    padding: 10px 20px 10px 0px; /* Adds padding around the footer */
+}
+
+/* Styling for paragraphs within the footer */
+footer p{
+    text-align: center; /* Centers the text */
+}
+
+/* Styling for the footer links section */
+.footer_links{
+    display: flex; /* Uses Flexbox layout */
+    justify-content: space-between; /* Distributes space evenly between child elements */
+    align-items: center; /* Aligns child elements vertically in the center */
+}
+
+/* Styling for left links within the footer */
+.left_link a{
+    padding-left: 20px; /* Adds padding to the left of the links */
+}
+
+/* Styling for right links within the footer */
+.right_link a{
+    padding-left: 20px; /* Adds padding to the left of the links */
 }

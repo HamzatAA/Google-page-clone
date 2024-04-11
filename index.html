@@ -3,9 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Sets the title of the webpage, which is displayed in the browser tab -->
     <title>Google</title>
+
+    <!-- Links to an external CSS file for styling the webpage -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Links to an external font library for using Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Sets the favicon for the webpage, which is displayed in the browser tab next to the title -->
+    <link rel="shortcut icon" href="https://cdn.iconscout.com/icon/free/png-256/free-google-7662287-6297223.png" type="image/x-icon">
 </head>
 <body>
     <div class="page">
@@ -24,26 +32,27 @@
             </div>
         </nav>
 
-        <!-- google image -->
+        <div class="main">
 
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPMqk0y4s1WttNm3g9azuIEa9h4Vj5fVJeJg&s" alt="Google_logo.png">
+            <!-- google image -->
+            <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPMqk0y4s1WttNm3g9azuIEa9h4Vj5fVJeJg&s" alt="Google_logo.png">
 
-        <!-- search box -->
+            <!-- search box -->
 
-        <div class="search_box">
-            <i class="material-icons">search</i>
-            <input type="text">
-            <img src="assets/google_mic_icon.svg" alt="google_mic_icon_svg">
-            <img src="assets/lens_google_icon.svg" alt="google_lens_icon_svg">
+            <div class="search_box">
+                <i class="material-icons">search</i>
+                <input type="text">
+                <a href="#"><img src="assets/google_mic_icon.svg" alt="google_mic_icon_svg"></a>
+                <a href="#"><img src="assets/lens_google_icon.svg" alt="google_lens_icon_svg"></a>
+            </div>
+
+            <!-- buttons -->
+
+            <div class="btn_box">
+                <button>Google Search</button>
+                <button>I'm Feeling Lucky</button>
+            </div>
         </div>
-
-        <!-- buttons -->
-
-        <div class="btn_box">
-            <button>Google Search</button>
-            <button>I'm Feeling Lucky</button>
-        </div>
-
         <!-- footer -->
 
         <footer>
